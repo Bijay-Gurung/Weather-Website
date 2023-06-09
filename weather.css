@@ -1,0 +1,71 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    color: rgb(219, 195, 158);
+}
+header{
+    display: flex;
+}
+header h1{
+    padding: 10px;
+}
+header nav{
+    flex: 1;
+    text-align: right;
+    padding-top: 20px;
+}
+header nav ul{
+    display: inline-block;
+    list-style: none;
+}
+header nav ul li{
+    display: inline-block;
+    margin-right: 30px;
+    font-size: large;
+}
+header nav ul li a{
+    text-decoration: none;
+}
+header nav ul li button{
+    border-radius: 15px;
+    width: 60px;
+    border-color: rgb(63, 63, 63);
+    cursor: pointer;
+}
+section{
+    height: 600px;
+    width: 100%;
+}
+section .Weather_Board{
+    height: 350px;
+    width: 500px;
+    border-radius: 15px;
+    position: relative;
+    top: 20px;
+    left: 33%;
+    background-image: url(./Images/Weather_Background/Sunny\ Weather\ Background\ Images.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: 4px 4px 8px 8px #767676;
+}
+section .Weather_Board .weather ul li{
+    list-style: none;
+    display: flex;
+}
+footer{
+    background-color: #000;
+}
+footer nav ul li{
+    list-style: none;
+    padding-top: 10px;
+    padding-left: 20px;
+    font-size: large;
+    
+}
+footer nav ul li a{
+    text-decoration: none;
+}
+footer p{
+    text-align: center;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloud Weather</title>
+    <link href="weather.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4f9d824da5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Cloud Weather</h1>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><button onclick="myFunction()">Dark</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="Weather_Board">
+            <div class="weather">
+                <ul>
+                    <li><h1>Sunny</h1></li>
+                    <li><img src="./Images/Weather Icon/icons8-sun-48.png"></li>
+                </ul>
+            </div>
+
+            <div class="temperature">
+                <img src="./Images/Weather Icon/icons8-thermometer-48.png">
+            </div>
+            
+            <div class="five_days_weather">
+                <p onclick="fiveDaysWeather()">More details</p>
+
+                <div class="weather_table">
+                    <tr></tr>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </nav>
+        <p>Copyright@Cloud Weather.pvt.ltd</p>
+    </footer>
+</body>
+</html>
