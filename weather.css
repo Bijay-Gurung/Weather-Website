@@ -2,7 +2,6 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    color: rgb(219, 195, 158);
 }
 header{
     display: flex;
@@ -51,7 +50,22 @@ section .Weather_Board{
 }
 section .Weather_Board .weather ul li{
     list-style: none;
-    display: flex;
+    display: inline-block;
+}
+section .Weather_Board .weather ul li img{
+    position: relative;
+    left: 780%;
+}
+section .Weather_Board .temperature img{
+    position: relative;
+    top: 60px;
+    left: 47%;
+}
+section .Weather_Board .five_days_weather p{
+    position: relative;
+    top: 70px;
+    left: 43%;
+    font-size: larger;
 }
 footer{
     background-color: #000;
