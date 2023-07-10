@@ -2,54 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cloud Weather</title>
+    <title>Weather</title>
     <link href="weather.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/4f9d824da5.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <h1>Cloud Weather</h1>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><button onclick="myFunction()">Dark</button></li>
-            </ul>
-        </nav>
-    </header>
-
     <section>
-        <div class="Weather_Board">
-            <div class="weather">
-                <ul>
-                    <li><h1>Sunny</h1></li>
-                    <li><img src="./Images/Weather Icon/icons8-sun-48.png"></li>
-                </ul>
+        <div class="container">
+            <div class="search">
+                <input type="text" id="searchBar" placeholder="Search">
+                <button onclick="searchButton()"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <h3 id="cityName">Kathmandu</h3>
+            <div class="WeatherData">
+                <span id="weatherLogo"></span>
+                <h1 id="temperature"> </h1>
+                <h2 id="weatherCondition"></h2>
             </div>
 
-            <div class="temperature">
-                <img src="./Images/Weather Icon/icons8-thermometer-48.png">
+            <div class="airQuality">
+                <h3 id="humidity"></h3>
+                <h3 id="pressure"></h3>
+                <span id="windSpeedIcon"></span>
+                <p id="windSpeed"></p>
             </div>
-            
-            <div class="five_days_weather">
-                <p onclick="fiveDaysWeather()">More details</p>
 
-                <div class="weather_table">
-                    <tr></tr>
-                </div>
+            <div class="moreDetails">
+
             </div>
         </div>
     </section>
-
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="">About</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
-        </nav>
-        <p>Copyright@Cloud Weather.pvt.ltd</p>
-    </footer>
+    
+    <script src="weather.js"></script>
 </body>
 </html>
