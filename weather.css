@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+section{
+    display: grid;
+    grid-template-rows: repeat(6,100px);
+    grid-template-columns: repeat(18,100px);
+}
+.container{
+    background-color: #935959;
+    color: #fff;
+    border-radius: 18px;
+    grid-row-start: 2;
+    grid-row-end: 7;
+    grid-column-start: 5;
+    grid-column-end: 12;
+    box-shadow: 5px 3px 8px 6px #aeabab;
+}
+.search{
+    position: relative;
+    top: 20px;
+    left: 35%;
+}
+#cityName{
+    position: relative;
+    left: 15%;
+    top: 60px;
+    font-weight: 900;
+    font-size: larger;
+}
+.WeatherData{
+    position: relative;
+    top: 65px;
+    left: 33%;
+    display: flex;
+}
+#temperature{
+    font-size: xx-large;
+    font-weight: bolder;
+}
+#weatherCondition{
+    position: relative;
+    top: 68px;
+    left: 57%;
+}
+.airQuality{
+    text-align: center;
+    background-color: #502b2b;
+    height: 160px;
+    width: 180px;
+    border-radius: 20px;
+    position: relative;
+    top: 100px;
+}
+.airQuality #windSpeedIcon{
+   position: relative;
+   top: 20px;
+}
+.airQuality #windSpeed{
+    position: relative;
+    top: 25px;
+}
+input{
+    background-image: url(Images/Weather_Background/13346.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+button{
+    width: 30px;
+}
